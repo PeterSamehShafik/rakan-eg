@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route } from 'react-router-dom';
-import Navbar from './../Common/Navbar/Navbar';
-import TopLoader from './../Common/ui/TopLoader';
-import Home from './../Components/Home/Home';
-import NotFound from '../Common/NotFound/NotFound';
+import Navbar from '../Components/Common/Navbar';
+import TopLoader from '../Components/Common/TopLoader';
+import Home from '../Pages/Home';
+import NotFound from '../Pages/NotFound';
 
 const AppRouter = () => (
     <BrowserRouter>

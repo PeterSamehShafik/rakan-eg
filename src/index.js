@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import ErrorText from './Common/ui/ErrorText';
+import ErrorText from './Components/Common/ErrorText';
 import { ErrorBoundary } from 'react-error-boundary';
 
 function fallbackRender({ error, resetErrorBoundary }) {
