@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./App.css";
+
 import SplashScreen from "./Common/ui/SplashScreen.jsx";
 import AppRouter from "./Routes/AppRouter.jsx";
 
