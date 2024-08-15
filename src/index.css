@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* globals.css or any other CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+/* globals.css or any other CSS file */
+
+/* Apply Poppins to all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Apply Open Sans to the rest of the text */
+  body, p, span, div {
+    font-family: 'Open Sans', sans-serif !important;
+  }
+  

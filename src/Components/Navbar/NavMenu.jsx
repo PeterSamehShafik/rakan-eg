@@ -27,7 +27,7 @@ const NavMenu = ({ data }) => (
                 <NavLink
                     key={index}
                     to={item.url}
-                    className={({ isActive }) => `text-black hover:text-gray-600 px-4 ${isActive ? 'text-red-800' : ''}`}
+                    className={({ isActive }) => `text-black hover:text-gray-600 px-4 last:pe-0 ${isActive ? 'text-red-800' : ''}`}
                 >
                     {item.name}
                 </NavLink>
