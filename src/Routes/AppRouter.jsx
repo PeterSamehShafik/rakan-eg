@@ -7,9 +7,9 @@ import NotFound from "../Pages/NotFound";
 
 const AppRouter = () => (
   <BrowserRouter>
-    <Navbar />
+    {/* <Navbar /> */}
     <TopLoader>
-      <Route path="" element={<Home />} />
+      <Route path="/home/hello" element={<Home />} />
       <Route path="404" element={<NotFound />} />
       <Route path="*" element={<Navigate to="/404" />} />
     </TopLoader>
