@@ -4,27 +4,22 @@ import Section from "../Components/Section.jsx";
 import Button from "../Components/Button.jsx";
 import ImgCard from "../Components/ImgCard.jsx";
 import PageHeader from "../Components/PageHeader.jsx";
+import { homeData } from "../Data/Data.js";
 
 export default function Home() {
   useChangeTitle("HOME");
 
   return (
     <>
-      {/* <div>Home</div> */}
-
-      {/* <Section
-        title="Heading One"
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, odit ipsam debitis ab exercitationem unde sit quaerat possimus reiciendis nulla numquam fugiat veritatis blanditiis atque repudiandae, consectetur similique, esse molestiae."
-        className="text-center items-center"
-      ></Section> */}
-
-      {/* <ImgCard
-        src="https://ice-infinity.com/wp-content/uploads/2019/05/windrose.jpg"
-        content="Alshamiya Stores."
-      /> */}
-
-      <PageHeader
-        heading="Career Opportunities"
+      <Section
+        title={homeData.aboutUs.title}
+        desc={homeData.aboutUs.desc}
+        className="items-center" // Set default background color or remove if not needed
+      />
+      <Section
+        title={homeData.ourServices.title}
+        desc={homeData.ourServices.desc}
+        className="items-center bg-gray-100" // Set specific background color
       />
     </>
   );

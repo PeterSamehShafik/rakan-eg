@@ -8,14 +8,11 @@ function ImgCard({ src, content }) {
       {/* Card Image */}
       <img src={src} alt="Card" className="w-full h-full object-cover" />
 
-      {/* Div that slides up on hover */}
       <div
         className="absolute inset-0 bg-black bg-opacity-40 
                       translate-y-full group-hover:translate-y-0 
                       transition-transform duration-300 ease-in-out"
-      >
-        {/* Button that moves to the middle on hover */}
-      </div>
+      ></div>
       <div
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:translate-y-0 
                             opacity-0 group-hover:opacity-100 

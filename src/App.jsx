@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 import SplashScreen from "./Components/SplashScreen.jsx";
 import AppRouter from "./Routes/AppRouter.jsx";
 
@@ -12,13 +11,13 @@ function App() {
 
   return (
     <>
-      {loading ?
+      {loading ? (
         <SplashScreen />
-        :
-        <div className="App h-[1000px]">
+      ) : (
+        <div className="App">
           <AppRouter />
         </div>
-      }
+      )}
     </>
   );
 }
