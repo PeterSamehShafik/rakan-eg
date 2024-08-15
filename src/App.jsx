@@ -15,7 +15,7 @@ function App() {
       {loading ?
         <SplashScreen />
         :
-        <div className="App">
+        <div className="App h-[1000px]">
           <AppRouter />
         </div>
       }
