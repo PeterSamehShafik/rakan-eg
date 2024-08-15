@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <div>Home</div>
 
-      <Section title='ABOUT US' desc='TESTING'>
-        <h1>hi</h1>
-      </Section>
+      {/* <Section title="text" desc="" className="">
+        <h1 className="text-slate-300">hi</h1>
+      </Section> */}
     </>
   );
 }
