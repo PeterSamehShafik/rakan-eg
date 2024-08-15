@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route } from 'react-router-dom';
-import Navbar from '../Components/Common/Navbar';
-import TopLoader from '../Components/Common/TopLoader';
+import Navbar from '../Components/Navbar';
+import TopLoader from '../Components/TopLoader';
 import Home from '../Pages/Home';
 import NotFound from '../Pages/NotFound';
 
