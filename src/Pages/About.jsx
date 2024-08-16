@@ -5,8 +5,10 @@ import PageHeader from "../Components/PageHeader";
 import { aboutUsData } from "../Data/Data"; // Adjust the path if necessary
 // Import images directly from the src/assets folder
 import avatar from "../Assets/avatar.jpg"; // Adjust the path if necessary
+import useChangeTitle from "../Hooks/useChangeTitle.jsx";
 
 function About() {
+  useChangeTitle("About us");
   const [data, setData] = useState(null);
 
   // Create a mapping for dynamic imports

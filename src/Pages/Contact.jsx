@@ -6,8 +6,9 @@ import { FiMail } from "react-icons/fi";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { contactData } from "../Data/Data";
-
+import useChangeTitle from "../Hooks/useChangeTitle.jsx";
 function Contact() {
+  useChangeTitle("Contact");
   return (
     <>
       <PageHeader heading={contactData.heading} />

@@ -3,8 +3,9 @@ import Section from "../Components/Section";
 import Card from "../Components/Card";
 import { AiOutlineLike } from "react-icons/ai";
 import { service1Data } from "../Data/Data"; // Adjust the path if necessary
-
+import useChangeTitle from "../Hooks/useChangeTitle.jsx";
 export default function Service1() {
+  useChangeTitle("Service1");
   return (
     <>
       <PageHeader heading={service1Data.pageHeader} />

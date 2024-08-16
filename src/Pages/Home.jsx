@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import WorkCarousel from '../Components/WorkCarousel/WorkCarousel.jsx';
 
 export default function Home() {
-  useChangeTitle("HOME");
+  useChangeTitle("Home");
 
   return (
     <>
