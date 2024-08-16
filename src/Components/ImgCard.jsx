@@ -4,7 +4,7 @@ import { FaSearchPlus } from "react-icons/fa";
 
 function ImgCard({ src, content }) {
   return (
-    <div className="relative group w-96 bg-red-600 h-64 overflow-hidden shadow-lg max-[390px]:w-80 max-[390px]:mx-auto cursor-pointer">
+    <div className="relative group w-96 bg-red-800 h-64 overflow-hidden shadow-lg max-[390px]:w-80 max-[390px]:mx-auto cursor-pointer">
       {/* Card Image */}
       <img src={src} alt="Card" className="w-full h-full object-cover" />
 

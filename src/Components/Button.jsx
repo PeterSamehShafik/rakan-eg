@@ -4,8 +4,8 @@ function Button({ children, outline, className }) {
       className={`tracking-widest font-sans px-7 py-3 rounded-sm font-medium transition-colors duration-300 ${className} 
       ${
         outline
-          ? "text-[#777] border border-[#dbdbdb] hover:bg-red-700 hover:text-white"
-          : "bg-red-700 text-white hover:bg-black"
+          ? "text-[#777] border border-[#dbdbdb] hover:bg-red-800 hover:text-white"
+          : "bg-red-800 text-white hover:bg-black"
       }`}
     >
       {children}

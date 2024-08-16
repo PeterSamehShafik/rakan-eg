@@ -17,7 +17,7 @@ function Contact() {
       >
         <Section
           title={contactData.companyInfoTitle}
-          className="text-red-600 text-xl items-center"
+          className="text-red-800 text-xl items-center"
         >
           <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-2 max-sm:gap-0 mt-3 max-w-4xl">
             <Card

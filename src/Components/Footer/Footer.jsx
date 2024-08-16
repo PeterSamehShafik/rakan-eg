@@ -8,7 +8,7 @@ export default function Footer() {
         ['About Us', 'Projects', 'Media Center', 'Contact Us'].includes(item.name)
     );
     return (
-        <footer className="bg-zinc-800 text-slate-400 py-10">
+        <footer className="bg-zinc-800 text-slate-400 py-10 selection:bg-red-500">
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     {/* Copyright text */}
