@@ -66,7 +66,7 @@ function About() {
 
               {/* Details Section */}
               <div className="p-6">
-                <h2 className="text-xl text-center group-hover:text-red-600 transition-colors font-bold text-gray-800">
+                <h2 className="text-xl text-center group-hover:text-red-800 transition-colors font-bold text-gray-800">
                   {member.name}
                 </h2>
                 <p className="text-sm text-center text-gray-600">
