@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
@@ -7,12 +7,10 @@ import 'swiper/css/pagination';
 
 import Button from './Button.jsx';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { homeData } from './../Data/Data';
+import { homeData } from '../Data/Data.js';
 
-// Example data for slides
-const slides = homeData.mainCarousel
 
-export default function HomeCarousel() {
+export default function MainCarousel() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
             <Swiper
@@ -43,7 +41,7 @@ export default function HomeCarousel() {
                 }}
                 className="w-full h-full"
             >
-                {slides.map((slide, index) => (
+                {homeData.mainCarousel.map((slide, index) => (
                     <SwiperSlide key={slide.id}>
                         <div className="relative w-full h-full">
                             <img
