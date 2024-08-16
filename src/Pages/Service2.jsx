@@ -1,8 +1,10 @@
 import { service2Data } from "../Data/Data";
 import PageHeader from "../Components/PageHeader";
 import Section from "../Components/Section";
+import useChangeTitle from "../Hooks/useChangeTitle.jsx";
 
 function Service2() {
+  useChangeTitle("Service2");
   // Function to require image dynamically
   const getImage = (imageName) => {
     try {
@@ -13,6 +15,7 @@ function Service2() {
     }
   };
 
+  
   return (
     <>
       <PageHeader heading={service2Data.pageHeader} />
