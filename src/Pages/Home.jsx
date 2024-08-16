@@ -5,12 +5,15 @@ import Button from "../Components/Button.jsx";
 import ImgCard from "../Components/ImgCard.jsx";
 import PageHeader from "../Components/PageHeader.jsx";
 import { homeData } from "../Data/Data.js";
+import HomeCarousel from "../Components/HomeCarousel.jsx";
 
 export default function Home() {
   useChangeTitle("HOME");
 
   return (
     <>
+      <HomeCarousel />
+      
       <Section
         title={homeData.aboutUs.title}
         desc={homeData.aboutUs.desc}
@@ -21,6 +24,7 @@ export default function Home() {
         desc={homeData.ourServices.desc}
         className="items-center bg-gray-100" // Set specific background color
       />
+
     </>
   );
 }

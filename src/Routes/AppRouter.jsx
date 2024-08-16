@@ -7,6 +7,8 @@ import NotFound from "../Pages/NotFound";
 import About from "../Pages/About";
 import Service1 from "../Pages/Service1";
 import Service2 from "../Pages/Service2";
+import Footer from "../Components/Footer/Footer.jsx";
+
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -19,6 +21,7 @@ const AppRouter = () => (
       <Route path="404" element={<NotFound />} />
       <Route path="*" element={<Navigate to="/404" />} />
     </TopLoader>
+    <Footer />
   </BrowserRouter>
 );
 

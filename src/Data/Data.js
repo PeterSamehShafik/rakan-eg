@@ -17,6 +17,29 @@ export const homeData = {
     desc:
       "As a contracting company we provide the service of supplying, installing, commissioning and startup of all electromechanical systems through high skilled engineers including but not limited to the following.",
   },
+  mainCarousel: [
+    {
+      id: 1,
+      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      alt: "Slide 1",
+      title: "Slide 1 Title",
+      description: "This is a description for Slide 1.",
+    },
+    {
+      id: 2,
+      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      alt: "Slide 2",
+      title: "Slide 2 Title",
+      description: "This is a description for Slide 2.",
+    },
+    {
+      id: 3,
+      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      alt: "Slide 3",
+      title: "Slide 3 Title",
+      description: "This is a description for Slide 3.",
+    }
+  ]
 };
 
 export const navData = [
