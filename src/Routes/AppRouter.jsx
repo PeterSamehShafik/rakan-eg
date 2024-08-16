@@ -4,8 +4,11 @@ import Navbar from "../Components/Navbar/Navbar";
 import TopLoader from "../Components/TopLoader";
 import Home from "../Pages/Home";
 import NotFound from "../Pages/NotFound";
-import About from "../Pages/About.jsx";
+import About from "../Pages/About";
+import Service1 from "../Pages/Service1";
+import Service2 from "../Pages/Service2";
 import Footer from "../Components/Footer/Footer.jsx";
+
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -13,6 +16,8 @@ const AppRouter = () => (
     <TopLoader>
       <Route path="" element={<Home />} />
       <Route path="/about-us" element={<About />} />
+      <Route path="/service1" element={<Service1 />} />
+      <Route path="/service2" element={<Service2 />} />
       <Route path="404" element={<NotFound />} />
       <Route path="*" element={<Navigate to="/404" />} />
     </TopLoader>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-function PageHeader({ heading }) {
+function PageHeader({ heading, className }) {
   const location = useLocation().pathname;
   const [routes, setRoutes] = useState(null);
 
@@ -26,7 +26,7 @@ function PageHeader({ heading }) {
   }, []);
 
   return (
-    <header className="py-10 !bg-gray-100">
+    <header className={`py-10 !bg-gray-100 max-sm:px-5 ${className}`}>
       <div className="container mx-auto flex justify-between items-center">
         <h3 className="text-lg font-semibold opacity-70 text-gray-600 tracking-wider">
           {heading.toUpperCase()}
