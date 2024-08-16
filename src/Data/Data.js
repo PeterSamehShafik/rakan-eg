@@ -250,4 +250,20 @@ export const service2Data = {
     ],
   },
 };
-export const contactUs = {};
+
+export const contactData = {
+  heading: "Contact Us",
+  companyInfoTitle: "Company's info",
+  contactDetails: {
+    address: "Building No.6, intersection of 306St. with 307 St, New Maadi, Cairo–Egypt",
+    poBox: "11931",
+    phone: {
+      tel: "(+202) 25176338",
+      telLink: "tel:+20225176338",
+    },
+    email: {
+      emailAddress: "info@ice-infinity.com",
+      emailLink: "mailto:info@ice-infinity.com",
+    },
+  },
+};
