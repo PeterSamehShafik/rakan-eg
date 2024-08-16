@@ -21,6 +21,7 @@ export default function Home() {
         desc={homeData.ourServices.desc}
         className="items-center bg-gray-100" // Set specific background color
       />
+      <PageHeader heading="Home" />
     </>
   );
 }
