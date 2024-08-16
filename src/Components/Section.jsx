@@ -12,7 +12,7 @@ export default function Section({ children, title, desc, className }) {
           </h2>
           <div className="h-[2.5px] w-14 bg-[#dbdbdb] my-3"></div>
           <p
-            className={`text-gray-500 leading-loose text-md max-md:px-4 max-w-2xl ${className} text-justify`}
+            className={`text-gray-500 sm:leading-loose text-md max-md:px-4 max-w-3xl ${className} text-justify`}
           >
             {desc}
           </p>

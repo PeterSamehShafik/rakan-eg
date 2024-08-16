@@ -51,7 +51,7 @@ function About() {
       <div className="h-[0.25px] max-w-6xl mx-auto bg-[#dbdbdb] "></div>
 
       <Section title={data.section3.title} className="items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-x-4 mt-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-x-4 mt-3 max-sm:gap-y-8">
           {data.section3.members.map((member, index) => (
             <div
               key={index}
@@ -74,11 +74,22 @@ function About() {
                 </p>
                 <div className="mt-4 space-y-2">
                   <p className="text-gray-700">
-                    <span className="font-semibold">Mob:</span> {member.mob}
+                    <span className="font-semibold">Mob:</span>{" "}
+                    <a
+                      href={`tel:+ ${member.mob}`}
+                      className="text-gray-500 underline"
+                    >
+                      {member.mob}
+                    </a>
                   </p>
                   <p className="text-gray-700">
                     <span className="font-semibold">E-Mail:</span>{" "}
-                    {member.email}
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="text-gray-500 underline"
+                    >
+                      {member.email}
+                    </a>
                   </p>
                   <p className="text-gray-700">
                     <span className="font-semibold">Experience:</span>{" "}

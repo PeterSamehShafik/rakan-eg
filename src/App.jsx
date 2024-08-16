@@ -11,13 +11,13 @@ function App() {
 
   return (
     <>
-      {loading ? (
+      {loading ?
         <SplashScreen />
-      ) : (
-        <div className="App">
+        :
+        <div className="App selection:bg-red-300">
           <AppRouter />
         </div>
-      )}
+      }
     </>
   );
 }

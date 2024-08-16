@@ -1,8 +1,8 @@
 import React from "react";
 
-function Card({ icon, title, desc }) {
+function Card({ icon, title, desc, className }) {
   return (
-    <div className="relative group flex flex-col items-center p-2 bg-white rounded-lg tracking-wide text-center">
+    <div className={`relative group flex flex-col items-center p-2 bg-white rounded-lg tracking-wide text-center ${className}`}>
       {/* Icon */}
       <div className="relative">
         <div className="card-logo relative p-5 border border-[#dbdbdb] rounded-full text-6xl text-red-500 z-10 transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-transparent">
