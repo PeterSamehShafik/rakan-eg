@@ -8,26 +8,29 @@ const MobileMenu = ({ open, toggleDrawer, data }) => (
     <div className="w-full h-full bg-zinc-800 text-white">
       <List className='!py-0'>
         {data.map((item, index) =>
-          item.dropdown ? (
+          item.dropdown ?
             <Accordion key={index} className='!shadow-none flex flex-col !bg-zinc-800 !text-white border-b border-slate-300'>
               <AccordionSummary className='self-center' expandIcon={<MdExpandMore className='text-white' />} aria-controls={`panel${index}-content`} id={`panel${index}-header`}>
                 <Typography>{item.name}</Typography>
               </AccordionSummary>
-              <AccordionDetails className='!py-0 !bg-zinc-700 flex flex-col items-center '>
-                <List className='!py-0'>
-                  {item.submenu.map((subitem, subindex) => (
-                    <ListItem key={subindex} component={NavLink} to={subitem.url} onClick={toggleDrawer(false)}>
-                      <ListItemText primary={subitem.name} />
-                    </ListItem>
-                  ))}
+              <AccordionDetails className='!p-0 !bg-zinc-700 '>
+                <List className='!py-0 w-full'>
+                  {item.submenu.map((subitem, subindex) =>
+                    <NavLink key={subindex} to={subitem.url} onClick={toggleDrawer(false)} className={({ isActive }) => `block w-full ${isActive ? 'bg-red-800' : ''}`}>
+                      <ListItem className='w-full'>
+                        <ListItemText className='text-center' primary={subitem.name} />
+                      </ListItem>
+                    </NavLink>
+                  )}
                 </List>
               </AccordionDetails>
             </Accordion>
-          ) : (
-            <ListItem key={index} className='border-b border-slate-300 !text-center' component={NavLink} to={item.url} onClick={toggleDrawer(false)}>
-              <ListItemText primary={item.name} />
-            </ListItem>
-          )
+            :
+            <NavLink key={index} to={item.url} onClick={toggleDrawer(false)} className={({ isActive }) => `block w-full ${isActive ? 'bg-red-800 rounded-md' : ''}`}>
+              <ListItem className='border-b border-slate-300 !text-center'>
+                <ListItemText primary={item.name} />
+              </ListItem>
+            </NavLink>
         )}
       </List>
     </div>

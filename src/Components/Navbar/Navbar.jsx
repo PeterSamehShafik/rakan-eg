@@ -19,7 +19,7 @@ const Navbar = () => {
       <SmallNavbar />
 
       {/* Main Navbar */}
-      <AppBar position="sticky" className="!bg-white !shadow-md py-4">
+      <AppBar position="sticky" className="!bg-white !shadow-md py-0">
         <Toolbar className="container mx-auto flex justify-between">
           <Typography variant="h6" className="text-black">
             LOGO

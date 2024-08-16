@@ -1,14 +1,14 @@
-function Button({ content, outline, className }) {
+function Button({ children, outline, className }) {
   return (
     <button
-      className={`tracking-widest font-sans px-7 py-3 rounded-sm font-medium transition-colors duration-300 text-sm ${className} 
+      className={`tracking-widest font-sans px-7 py-3 rounded-sm font-medium transition-colors duration-300 ${className} 
       ${
         outline
-          ? "text-[#777] border border-[#dbdbdb] hover:bg-red-500 hover:text-white"
-          : "bg-red-500 text-white hover:bg-black"
+          ? "text-[#777] border border-[#dbdbdb] hover:bg-red-700 hover:text-white"
+          : "bg-red-700 text-white hover:bg-black"
       }`}
     >
-      {content}
+      {children}
     </button>
   );
 }
