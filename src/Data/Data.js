@@ -1,16 +1,19 @@
-import { FaRegLightbulb } from "react-icons/fa6";
+import { FaRegLightbulb, FaPeopleGroup, FaRegHandshake } from "react-icons/fa6";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 import { AiOutlineLike } from "react-icons/ai";
-import { FaRegHandshake } from "react-icons/fa6";
 import { LuSettings } from "react-icons/lu";
-import { FaPeopleGroup } from "react-icons/fa6";
 
 export const homeData = {
   aboutUs: {
     title: "About Us",
     desc:
       "ICE is the exclusive agent of Samjung Tech for HVAC products special Absorption Chillers, also is professional calibers in all electromechanical disciplines for both contracting sectors, services, maintenance. Every person in the company has a luminous history of working in the biggest contracting firms in Egypt. Despite the company young age but we have our own vision which qualifies us to carry out our works skillfully and in a professional manner.",
+  },
+  ourWork: {
+    title: "OUR WORK",
+    desc:
+      "Our professionals will perform diagnostic tests, fluid flush and fills, engine replacement, oil changes, and total vehicle overhauls.",
   },
   ourServices: {
     title: "Our Services",
@@ -38,6 +41,51 @@ export const homeData = {
       alt: "Slide 3",
       title: "Slide 3 Title",
       description: "This is a description for Slide 3.",
+    }
+  ],
+  workCarousel: [
+    {
+      id: 1,
+      src: 'https://via.placeholder.com/300x300',
+      content: 'Lotus club (Wadi Degla)–Sport Caféز'
+    },
+    {
+      id: 2,
+      src: 'https://via.placeholder.com/400x200',
+      content: 'Lotus club (Wadi Degla)–Sport Caféز'
+    },
+    {
+      id: 3,
+      src: 'https://via.placeholder.com/200x200',
+      content: 'Lotus club (Wadi Degla)–Sport Caféز'
+    },
+    {
+      id: 4,
+      src: 'https://via.placeholder.com/300x300',
+      content: 'Lotus club (Wadi Degla)–Sport Caféasd'
+    }
+  ],
+  servicesCard: [
+    {
+      id: 1,
+      title: "Service 1",
+      description: "Samsung’s reliable technology and people",
+      imageUrl: "https://via.placeholder.com/300x300",
+      link: "/service1"
+    },
+    {
+      id: 2,
+      title: "Service 2",
+      description: "we provide Electromechanical contracting services",
+      imageUrl: "https://via.placeholder.com/300x300",
+      link: "/service2"
+    },
+    {
+      id: 3,
+      title: "About Us",
+      description: "we provide operation and maintenance services",
+      imageUrl: "https://via.placeholder.com/300x300",
+      link: "/about-us"
     }
   ]
 };

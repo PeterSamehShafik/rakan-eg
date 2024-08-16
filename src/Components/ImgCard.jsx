@@ -4,7 +4,7 @@ import { FaSearchPlus } from "react-icons/fa";
 
 function ImgCard({ src, content }) {
   return (
-    <div className="relative group w-96 bg-red-600 h-64 overflow-hidden shadow-lg max-[390px]:w-80 max-[390px]:mx-auto">
+    <div className="relative group w-96 bg-red-600 h-64 overflow-hidden shadow-lg max-[390px]:w-80 max-[390px]:mx-auto cursor-pointer">
       {/* Card Image */}
       <img src={src} alt="Card" className="w-full h-full object-cover" />
 
@@ -18,10 +18,7 @@ function ImgCard({ src, content }) {
                             opacity-0 group-hover:opacity-100 
                             transition-all duration-300 ease-in-out flex flex-col items-center align-middle"
       >
-        <Button
-          className="transform !p-4 w-12 h-12"
-          content=<FaSearchPlus className="text-lg" />
-        />
+        <Button className="transform !p-4 w-12 h-12"><FaSearchPlus className="text-lg" /></Button>
         <h3 className="text-white text-md font-medium tracking-wide mt-3">
           {content}
         </h3>
