@@ -23,21 +23,21 @@ export const homeData = {
   mainCarousel: [
     {
       id: 1,
-      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      src: "https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg",
       alt: "Slide 1",
       title: "Slide 1 Title",
       description: "This is a description for Slide 1.",
     },
     {
       id: 2,
-      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      src: "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg",
       alt: "Slide 2",
       title: "Slide 2 Title",
       description: "This is a description for Slide 2.",
     },
     {
       id: 3,
-      src: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      src: "https://images.pexels.com/photos/4956920/pexels-photo-4956920.jpeg",
       alt: "Slide 3",
       title: "Slide 3 Title",
       description: "This is a description for Slide 3.",
@@ -46,22 +46,22 @@ export const homeData = {
   workCarousel: [
     {
       id: 1,
-      src: 'https://via.placeholder.com/300x300',
+      src: 'https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg',
       content: 'Lotus club (Wadi Degla)–Sport Caféز'
     },
     {
       id: 2,
-      src: 'https://via.placeholder.com/400x200',
+      src: 'https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg',
       content: 'Lotus club (Wadi Degla)–Sport Caféز'
     },
     {
       id: 3,
-      src: 'https://via.placeholder.com/200x200',
+      src: 'https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg',
       content: 'Lotus club (Wadi Degla)–Sport Caféز'
     },
     {
       id: 4,
-      src: 'https://via.placeholder.com/300x300',
+      src: 'https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg',
       content: 'Lotus club (Wadi Degla)–Sport Caféasd'
     }
   ],
@@ -70,21 +70,21 @@ export const homeData = {
       id: 1,
       title: "Service 1",
       description: "Samsung’s reliable technology and people",
-      imageUrl: "https://via.placeholder.com/300x300",
+      imageUrl: "https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg",
       link: "/service1"
     },
     {
       id: 2,
       title: "Service 2",
       description: "we provide Electromechanical contracting services",
-      imageUrl: "https://via.placeholder.com/300x300",
+      imageUrl: "https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg",
       link: "/service2"
     },
     {
       id: 3,
       title: "About Us",
       description: "we provide operation and maintenance services",
-      imageUrl: "https://via.placeholder.com/300x300",
+      imageUrl: "https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg",
       link: "/about-us"
     }
   ]
@@ -249,6 +249,78 @@ export const service2Data = {
       },
     ],
   },
+};
+
+// Data.js
+
+export const projectData = {
+  intro: {
+    title: "Our Projects",
+    desc: "We take pride in delivering high-quality construction projects that meet our clients’ expectations. Explore some of our completed and ongoing works.",
+  },
+
+  projectsSection: {
+    title: "Featured Projects",
+    desc: "A showcase of residential, commercial, and industrial construction projects executed with precision and care.",
+  },
+
+  projects: [
+    {
+      title: "Skyline Towers",
+      description: "A modern residential high-rise featuring luxury apartments and sustainable building practices.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg", // Place the image in src/Assets/
+      link: "#",
+    },
+    {
+      title: "Greenfield Mall",
+      description: "A commercial mall with state-of-the-art architecture, eco-friendly design, and ample parking space.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg",
+      link: "#",
+    },
+    {
+      title: "Sunset Villas",
+      description: "A premium residential villa project with private gardens, pools, and contemporary interiors.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg",
+      link: "#",
+    },
+    {
+      title: "Riverside Offices",
+      description: "A commercial office building with panoramic river views, modern amenities, and sustainable construction.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg",
+      link: "#",
+    },
+    {
+      title: "Mountain Retreat Resort",
+      description: "A luxury resort built on mountainous terrain, blending nature with modern construction techniques.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg",
+      link: "#",
+    },
+    {
+      title: "City Center Renovation",
+      description: "A large-scale urban renovation project improving public spaces and infrastructure for the city center.",
+      image: "https://images.pexels.com/photos/3199933/pexels-photo-3199933.jpeg",
+      link: "#",
+    },
+  ],
+};
+
+export const mediaData = {
+  intro: {
+    title: "Media Center",
+    desc: "Explore our gallery and videos highlighting our construction projects and milestones.",
+  },
+  photos: [
+    { title: "Skyline Towers Progress", image: "https://images.pexels.com/photos/36339294/pexels-photo-36339294.jpeg" },
+    { title: "Greenfield Mall Completion", image: "https://images.pexels.com/photos/4993502/pexels-photo-4993502.jpeg" },
+    { title: "Sunset Villas Exterior", image: "https://images.pexels.com/photos/36335242/pexels-photo-36335242.jpeg" },
+    { title: "Riverside Offices Interior", image: "https://images.pexels.com/photos/410730/pexels-photo-410730.jpeg" },
+    { title: "Mountain Retreat Resort", image: "https://images.pexels.com/photos/990093/pexels-photo-990093.jpeg" },
+    { title: "Mountain Retreat Resort", image: "https://images.pexels.com/photos/7430018/pexels-photo-7430018.jpeg" },
+  ],
+  videos: [
+    { title: "Skyline Towers Timelapse", src: "avatar.jpg" },
+    { title: "Greenfield Mall Construction", src: "avatar.jpg" },
+  ],
 };
 
 export const contactData = {
